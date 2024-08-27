@@ -1,0 +1,49 @@
+import datetime 
+
+def assistente_virtuale(comando): 
+ 
+    if comando == "Qual è la data di oggi?" 
+  
+    oggi = datetime.datetoday() 
+
+    risposta = "La data di oggi è " + oggi.strftime("%d/%m/%Y")
+
+ elif comando == "Che ore sono?":
+
+    ora_attuale = datetime.datetime.now().time()
+
+     risposta = "L'ora attuale è " + ora_attuale.strftime("%H:%M")    
+
+ elif comando == "Come ti chiami?":     
+
+      risposta = "Mi chiamo Assistente Virtuale"    
+ 
+ else:    
+  
+      risposta = "Non ho capito la tua domanda."   
+
+   return risposta 
+
+while True
+
+    comando_utente = input("Cosa vuoi sapere? ")    
+
+ if comando_utente.lower() == "esci":   
+
+     print("Arrivederci!")    
+
+     break 
+ 
+ else: 
+
+      print(assisente_virtuale(comando_utente))
+
+
+L'esercizio ci mostra una basilare intelligenza artificiale alle prese con tre domande. Nel caso non vengano proposte quelle determinate domande, il programma restituirà una risposta che include suggerimenti per le domande disponibili. Vi sono errori di sintassi e un errore logico, che causerebbe un impedimento funzionale.
+
+CORREZIONI 
+
+Riga 2 --> errore di sintaassi - "qual è la data di oggi?":
+Riga 4 --> errore di sintaassi - datetime.date.today  
+
+Riga 13 --> risposta incompleta - f"Non ho capito la tua domanda. Elenco domande valide: \nQual'è la data di oggi?\nChe ore sono?\nCome ti chiami?\n"
